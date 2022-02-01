@@ -1,0 +1,32 @@
+= slock - simple screen locker
+chtc <notnotchac0t1c@protonmail.com>
+{docdate}
+
+My personal https://tools.suckless.org/slock/[slock] build.
+
+== Requirements
+In order to build slock you need header files of:
+
+- Xlib
+- Xrandr
+- imlib2
+
+== Changes
+This only uses the https://tools.suckless.org/slock/patches/foreground-and-background/[foreground and background] patch and changes the colors to tokyonight ones.
+
+== Installation
+Clone the repository and enter the directory.
+[source,shell]
+git clone https://github.com/notchtc/slock
+cd slock
+
+Edit config.mk to match your local setup (slock is installed into
+the /usr/local namespace by default).
+
+Afterwards enter the following command to build and install slock
+(if necessary as root):
+[source,shell]
+make clean install
+
+== Running slock
+Simply invoke the `slock` command. To get out of it, enter your password.
