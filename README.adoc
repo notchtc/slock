@@ -5,14 +5,10 @@ chtc <notnotchac0t1c@protonmail.com>
 My personal https://tools.suckless.org/slock/[slock] build.
 
 == Requirements
-In order to build slock you need header files of:
-
-- Xlib
-- Xrandr
-- imlib2
+In order to build slock you need the Xlib header files.
 
 == Changes
-This only uses the https://tools.suckless.org/slock/patches/foreground-and-background/[foreground and background] patch and changes the colors to tokyonight ones.
+Tokyonight colors
 
 == Installation
 Clone the repository and enter the directory.
