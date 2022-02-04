@@ -3,10 +3,24 @@ static const char *user  = "nobody";
 static const char *group = "nogroup";
 
 static const char *colorname[NUMCOLS] = {
-	[INIT] =   "#1a1b26",     /* after initialization */
-	[INPUT] =  "#c0caf5",   /* during input */
-	[FAILED] = "#f7768e",   /* wrong password */
+	[INIT] = "black",       /* after initialization */
+	[INPUT] = "#005577",    /* during input */
+	[FAILED] = "#CC3333",   /* wrong password */
+	[CAPS] = "red",         /* CapsLock on */
+};
+
+/*
+ * Xresources preferences to load at startup
+ */
+ResourcePref resources[] = {
+		{ "color0",       STRING,  &colorname[INIT] },
+		{ "color3",       STRING,  &colorname[INPUT] },
+		{ "color1",       STRING,  &colorname[FAILED] },
+		{ "color9",       STRING,  &colorname[CAPS] },
 };
 
 /* treat a cleared input like a wrong password (color) */
 static const int failonclear = 1;
+
+/* time in seconds before the monitor shuts down */
+static const int monitortime = 10;

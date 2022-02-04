@@ -7,8 +7,10 @@ My personal https://tools.suckless.org/slock/[slock] build.
 == Requirements
 In order to build slock you need the Xlib header files.
 
-== Changes
-Tokyonight colors
+== Patches
+- https://tools.suckless.org/slock/patches/capscolor[capscolor]
+- https://tools.suckless.org/slock/patches/dpms[dpms]
+- https://tools.suckless.org/slock/patches/xresources[xresources]
 
 == Installation
 Clone the repository and enter the directory.
